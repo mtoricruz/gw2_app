@@ -7,7 +7,7 @@ export const fetchProfile = () => {
     return dispatch => {
         dispatch({ type: FETCH_PROFILE_START})
         axios
-            .get(`https://api.covid19api.com/summary`)
+            .get(`https://api.guildwars2.com/v2`)
             .then(res => {
                 console.log('API CONSOLE LOG', res.data)
                 dispatch({ type: FETCH_PROFILE_SUCCESS, payload: res})

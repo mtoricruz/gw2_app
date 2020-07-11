@@ -4,11 +4,12 @@ import { connect } from 'react-redux';
 import { fetchProfile } from '../actions/profileAction'
 
 const Profile = ({
-    isFetchingProfile
+    isFetchingProfile,
+    fetchProfile
 }) => {
     useEffect(() => {
         fetchProfile();
-    }, [])
+    }, [fetchProfile])
 
     return (
         <main>
