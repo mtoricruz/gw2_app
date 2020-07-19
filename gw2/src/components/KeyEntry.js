@@ -1,4 +1,4 @@
-import React, { PropTypes, Component } from 'react';
+import React, { Component } from 'react';
 
 export default class KeyEntry extends Component {
     render() {
@@ -16,6 +16,3 @@ export default class KeyEntry extends Component {
     }
 }
 
-KeyEntry.propTypes = {
-    setAccountKey: PropTypes.func.isRequired
-}

@@ -1,4 +1,4 @@
-import React, { PropTypes, Component } from 'react';
+import React, { Component } from 'react';
 
 export default class SubmitKey extends Component {
     render() {
@@ -6,6 +6,3 @@ export default class SubmitKey extends Component {
     }
 }
 
-SubmitKey.propTypes = {
-    keyDisabled: PropTypes.bool.isRequired
-}

@@ -9,6 +9,7 @@ export function getAccountInfo(key) {
 
 export function getCharacterList(key) {
     const url = `${gw2}/characters?access_token=${key}`
+    return axios.get(url)
 }
 
 export function getCharacterInfo(key, name) {

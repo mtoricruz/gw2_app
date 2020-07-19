@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route} from 'react-router-dom'
 
-import Profile from './components/Profile';
+import AuthContainer from './containers/AuthContainer';
 import logo from './logo.svg';
 import './App.css';
 
@@ -16,7 +16,7 @@ function App() {
           <img src={logo} className="App-logo" alt="logo" />
           <p>Profile Stuff</p>
         </header>
-        <Route path='/:id' component={Profile}/>
+        <Route path='/' component={AuthContainer}/>
       </div>
     </Router>
   );

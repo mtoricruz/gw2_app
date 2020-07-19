@@ -1,4 +1,4 @@
-import React, { PropTypes, Component } from 'react';
+import React from 'react';
 
 const KeyValidator = (props) => {
     return props.badKey === true 
@@ -23,7 +23,3 @@ const KeyValidator = (props) => {
 
 export default KeyValidator;
 
-KeyValidator.propTypes = {
-    badKey: PropTypes.bool.isRequired,
-    loadingAnimation: PropTypes.string
-}

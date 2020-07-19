@@ -1,4 +1,4 @@
-import React, { PropTypes, Component } from 'react';
+import React, { Component } from 'react';
 
 export default class AuthForm extends Component {
     render () {
@@ -13,7 +13,3 @@ export default class AuthForm extends Component {
     }
 }
 
-AuthForm.propTypes = {
-    onSubmitKey: PropTypes.func,
-    children: PropTypes.arrayOf(PropTypes.element)
-}
