@@ -16,3 +16,8 @@ export function getCharacterInfo(key, name) {
     return axios.get(url);
     // sub spaces with %20
 }
+
+export function getPermissions(key) {
+    const url = `${gw2}/tokenifo?access_token=${key}`
+    return axios.get(url)
+}
